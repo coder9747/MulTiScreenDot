@@ -35,7 +35,7 @@
         crossorigin="anonymous"></script>
     <script>
         const container = document.querySelector(".container");
-        const socket = io('http://localhost:8080', {
+        const socket = io('https://multiscreendot.onrender.com', {
             query: { height: 13, width: 22 }
         });
         socket.on("position", (data) => {
